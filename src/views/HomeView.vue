@@ -1,20 +1,21 @@
 <template>
-  <main>
+  <div class="hero-section">
     <h1>
       Frontends we like!
     </h1>
+  </div>  
 
-  <HelloWorld/>
-  </main>
+  <Accordion/>
+
 </template>
 
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue';
+import Accordion from '../components/Accordion.vue';
 
 export default {
     components: {
-    HelloWorld,
+    Accordion
   },
 }
 
