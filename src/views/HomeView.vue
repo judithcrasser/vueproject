@@ -3,9 +3,9 @@
     <h1>
       Frontends we like!
     </h1>
-  </div>  
+  </div>
 
-  <Accordion/>
+  <Accordion />
 
 </template>
 
@@ -14,7 +14,7 @@
 import Accordion from '../components/Accordion.vue';
 
 export default {
-    components: {
+  components: {
     Accordion
   },
 }

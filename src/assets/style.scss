@@ -26,56 +26,68 @@ nav {
     align-items: center;
 }
 
-.accordion {
-    .accordion-item {
-        .title {
-            display: flex;
-            justify-content: space-between;
-            padding: 1em;
-            font-weight: 600;
-            border: solid;
-            margin-bottom: 1em;
-            font-size: 1.5em;
+.accordion-section {
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
 
-            &:hover {
-                transition: .5s;
-                background-color: rgb(255, 255, 167);
-            }
-
-            .chevron-wrap {
+    .accordion {
+        .accordion-item {
+            .title {
                 display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                font-weight: 600;
+                border-top: solid;
+                border-bottom: solid;
+                margin-bottom: 1em;
+                font-size: 1.5em;
 
-                .chevron {
-                    height: 1em;
-                    width: fit-content;
+                &:hover {
+                    transition: .5s;
+                    background-color: rgb(255, 255, 167);
+                }
 
-                    &.up {
-                        transform: rotate(180deg);
-                    }
+                .chevron-wrap {
+                    display: flex;
 
-                    svg {
-                        height: 100%;
-                        width: auto;
+                    .chevron {
+                        height: 1em;
+                        width: fit-content;
+
+                        &.up {
+                            transform: rotate(180deg);
+                        }
+
+                        svg {
+                            height: 100%;
+                            width: auto;
+                        }
                     }
                 }
             }
-        }
 
-        .content {
-            display: flex;
-            padding: 1em;
+            .content {
+                display: flex;
+                padding: 1em;
 
-            .image {
-                width: 20%;
-                margin-right: 2em;
+                .image {
+                    width: 20vw;
+                    margin-right: 2em;
 
-                img {
-                    width: 100%;
-                    aspect-ratio: 1/1;
-                    object-fit: cover;
+                    @media (max-width: 1024px) {
+                        width: 50%;
+                    }
+
+                    img {
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                    }
                 }
             }
         }
     }
 }
+
 
