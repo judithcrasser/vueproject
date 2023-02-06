@@ -1,3 +1,81 @@
 body {
-    background-color: gray; 
+    font-family: sans-serif;
 }
+
+nav {
+    display: flex;
+    padding: 1em 1em 1em 20%;
+
+    a {
+        padding-right: 2em;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        transition: .5s;
+
+        &:hover {
+            color: #8b5a1d;
+        }
+    }
+}
+
+.hero-section {
+    height: 100vh;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.accordion {
+    .accordion-item {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            font-weight: 600;
+            border: solid;
+            margin-bottom: 1em;
+            font-size: 1.5em;
+
+            &:hover {
+                transition: .5s;
+                background-color: rgb(255, 255, 167);
+            }
+
+            .chevron-wrap {
+                display: flex;
+
+                .chevron {
+                    height: 1em;
+                    width: fit-content;
+
+                    &.up {
+                        transform: rotate(180deg);
+                    }
+
+                    svg {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            padding: 1em;
+
+            .image {
+                width: 20%;
+                margin-right: 2em;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
