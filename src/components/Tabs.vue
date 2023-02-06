@@ -66,8 +66,4 @@
   #active-tab, #tab-headers {
     width: 100%;
   }
-  
-  #active-tab {
-    padding: 0.75rem;
-  }
 </style>
