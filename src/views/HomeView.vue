@@ -12,7 +12,7 @@
 
 
 <script>
-import Accordion from '../components/Accordion.vue'
+import Accordion from '../components/Accordion/Accordion.vue';
 import TabsOutput from '../components/TabsOutput.vue'
 
 export default {

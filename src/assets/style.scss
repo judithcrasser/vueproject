@@ -1,3 +1,7 @@
+:root {
+    --yellow: rgb(255, 230, 0);
+}
+
 body {
     font-family: sans-serif;
 }
@@ -33,6 +37,8 @@ nav {
 
     .accordion {
         .accordion-item {
+            background-color: var(--yellow);
+
             .title {
                 display: flex;
                 justify-content: space-between;
@@ -41,11 +47,19 @@ nav {
                 border-top: solid;
                 border-bottom: solid;
                 margin-bottom: 1em;
-                font-size: 1.5em;
+                font-size: 2em;
+                background-color: var(--yellow);
+
+                .text {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 26%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%);
+                color: #fff;
+                display: inline;
+                line-height: 100%;
+                letter-spacing: -1px;
+                }
 
                 &:hover {
-                    transition: .5s;
-                    background-color: rgb(255, 255, 167);
+                    cursor: pointer;
                 }
 
                 .chevron-wrap {
@@ -70,6 +84,7 @@ nav {
             .content {
                 display: flex;
                 padding: 1em;
+                font-weight: 600;
 
                 .image {
                     width: 20vw;

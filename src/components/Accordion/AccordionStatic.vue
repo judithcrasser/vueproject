@@ -16,9 +16,26 @@
                                     'up': isOpen
                                 }">
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <path
-                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="800px"
+                                    height="800px"
+                                    viewBox="0 0 512 512"
+                                    version="1.1">
+                                    <title>chevron-down</title>
+                                    <g id="Page-1"
+                                        stroke="none"
+                                        stroke-width="1"
+                                        fill="none"
+                                        fill-rule="evenodd">
+                                        <g id="add"
+                                            fill="#000000"
+                                            transform="translate(80.915055, 157.440000)">
+                                            <polygon id="Path-19"
+                                                points="320 0 350.169889 30.1698893 175.084945 205.254834 0 30.1698893 30.1698893 0 175.084945 144.898278">
+
+                                            </polygon>
+                                        </g>
+                                    </g>
                                 </svg>
                             </div>
                         </div>
@@ -76,3 +93,4 @@ export default {
     },
 };
 </script>
+

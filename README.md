@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Backend
+```
+npm install json-server
+npx json-server --watch data/db.json
+```
