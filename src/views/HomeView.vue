@@ -6,19 +6,19 @@
   </div>
 
   <Accordion />
-  <TabsOutput />
+  <AppTab />
 
 </template>
 
 
 <script>
 import Accordion from '../components/Accordion.vue'
-import TabsOutput from '../components/TabsOutput.vue'
+import AppTab from '../components/AppTab.vue'
 
 export default {
   components: {
     Accordion,
-    TabsOutput
+    AppTab
   },
 }
 
