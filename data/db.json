@@ -1,17 +1,20 @@
 {
     "musicians": [
         {
+            "id": 1,
             "name": "Shostakovitch", 
-            "id": 1, 
+            "image": "https://img.welt.de/img/kultur/buehne-konzert/mobile165579455/8171620727-ci23x11-w1136/Der-sowjetische-Komponist-Dimitri-Schostakowitsch.jpg",
             "description": "Shostakovich was a Soviet-era Russian composer and pianist who became internationally known after the premiere of his First Symphony in 1926 and was regarded throughout his life as a major composer."},
         {
+            "id": 2,
             "name": "Sade", 
-            "id": 2, 
+            "image": "https://cdn.wegow.com/media/artist-media/sade/sade-1518712498.-1x1780.jpg",
             "description": "Lorem"
         },
         {
-            "name": "Daddy Yankee", 
             "id": 3, 
+            "name": "Daddy Yankee", 
+            "image": "https://images.universal-music.de/img/assets/510/510679/195/daddy-yankee-1.jpg",
             "description": "Lorem"
         }
     ]

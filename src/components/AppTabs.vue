@@ -1,32 +1,29 @@
 <template>
-  <div>
+    <div class="tabs">
 
-    <ul>
-        <li 
-            v-for="(tab, index) in tabList" 
-            :key="index"
-        >
-            <label 
-                :for="`${_uid}${index}`" 
-                v-text="tab" :class="{'active': index + 1 === activeTab}"
-            ></label>
-            <input
-                :id="`${_uid}${index}`"
-                type="radio"
-                :name="`${_uid}-tab`" 
-                :value="index + 1"
-                v-model="activeTab"
-            />
-        </li>
-    </ul>
+        <ul>
+            <li v-for="(tab, index) in tabList"
+                :key="index">
+                <label :for="`${_uid}${index}`"
+                    v-text="tab"
+                    :class="{ 'active': index + 1 === activeTab }"></label>
+                <input :id="`${_uid}${index}`"
+                    type="radio"
+                    :name="`${_uid}-tab`"
+                    :value="index + 1"
+                    v-model="activeTab" />
+            </li>
+        </ul>
 
-    <template v-for="(tab, index) in tabList">
-        <div :key="index" v-if="index + 1 === activeTab" class="content">
-            <slot :name="`tabPanel-${index + 1}`" />
-        </div>
-    </template>
-  
-  </div>
+        <template v-for="(tab, index) in tabList">
+            <div :key="index"
+                v-if="index + 1 === activeTab"
+                class="content">
+                <slot :name="`tabPanel-${index + 1}`" />
+            </div>
+        </template>
+
+    </div>
 </template>
 
 <script>
@@ -78,11 +75,10 @@ input {
     color: blue;
 }
 
-.content {
+.tabs .content {
     margin: 2.5rem;
     background-color: rgb(255, 222, 222);
     width: 80%;
     padding: 2rem;
 }
-
 </style>

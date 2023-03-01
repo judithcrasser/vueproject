@@ -6,17 +6,12 @@
                 <div v-for="musician in musicians"
                     :key="musician.id"
                     class="accordion-item">
-                    <router-link :to="{ name: 'AccordionItem', params: { id: musician.id } }">
 
-                        <h2 class="title">{{ musician.name }}</h2>
-
-                    </router-link>
-
-                    <!-- <div class="title"
+                    <div class="title"
                         @click="toggleAccordion()">
 
                         <div class="text">
-                            Shostakovitch
+                            {{ musician.name }}
                         </div>
 
                         <div class="chevron-wrap">
@@ -51,21 +46,19 @@
                     </div>
 
                     <div class="content"
-                        v-show="isOpen">
+                        v-if="isOpen">
                         <div class="image">
-                            <img src="https://img.welt.de/img/kultur/buehne-konzert/mobile165579455/8171620727-ci23x11-w1136/Der-sowjetische-Komponist-Dimitri-Schostakowitsch.jpg"
-                                alt="schostakowitsch">
+                            <img :src="musician.image"
+                                :alt="musician.name">
                         </div>
                         <div class="text-wrapper">
                             <p class="text">
-                                Shostakovich was a Soviet-era Russian composer and pianist who became internationally
-                                known after the premiere of his First Symphony in
-                                1926 and was regarded throughout his life as a major composer.
+                                {{ musician.description }}
                             </p>
                             <p class="text">
                                 Some of my favourite pieces are:
                             </p>
-                            <ul>
+                            <ul class="list">
                                 <li>
                                     Symphony No. 9
                                 </li>
@@ -78,17 +71,16 @@
                             </ul>
                         </div>
 
-                    </div> -->
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
-
 </template>
 
 <script>
-import AccordionItem from './AccordionItem.vue';
+
 
 export default {
     data() {
@@ -105,10 +97,97 @@ export default {
     },
 
     mounted() {
-        fetch('http://localhost:3000')
+        fetch('http://localhost:3000/musicians')
             .then(res => res.json())
-            .then(data => this.jobs = data)
+            .then(data => this.musicians = data)
             .catch(err => console.log(err.message))
     }
 };
 </script>
+
+<style lang="scss">
+.accordion-section {
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+
+    .accordion {
+        .accordion-item {
+            background-color: var(--yellow);
+            margin-bottom: 1em;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                font-weight: 600;
+                border-top: solid;
+                border-bottom: solid;
+                font-size: 2em;
+                background-color: var(--yellow);
+
+                .text {
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 26%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%);
+                    color: #fff;
+                    display: inline;
+                    line-height: 100%;
+                    letter-spacing: -1px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .chevron-wrap {
+                    display: flex;
+
+                    .chevron {
+                        height: 1em;
+                        width: fit-content;
+
+                        &.up {
+                            transform: rotate(180deg);
+                        }
+
+                        svg {
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                display: flex;
+                padding: 1em;
+                font-weight: 600;
+
+                .image {
+                    width: 20vw;
+                    margin-right: 2em;
+
+                    @media (max-width: 1024px) {
+                        width: 50%;
+                    }
+
+                    img {
+                        width: inherit;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        filter: grayscale(100%);
+                    }
+                }
+
+                .list {
+                    flex-direction: column;
+
+                    li {
+                        list-style: disc;
+                        margin-bottom: .5em;
+                    }
+                }
+            }
+        }
+    }
+}
+</style>
