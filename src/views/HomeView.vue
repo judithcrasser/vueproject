@@ -12,7 +12,7 @@
 
 
 <script>
-import Accordion from '../components/Accordion.vue'
+import Accordion from '../components/Accordion/Accordion.vue'
 import AppTab from '../components/AppTab.vue'
 
 export default {
