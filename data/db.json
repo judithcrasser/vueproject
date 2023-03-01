@@ -16,6 +16,24 @@
             "name": "Daddy Yankee", 
             "image": "https://images.universal-music.de/img/assets/510/510679/195/daddy-yankee-1.jpg",
             "description": "Lorem"
+        },
+        {
+            "id": 4, 
+            "name": "Dali Muru & The Polyphonic Swarm", 
+            "image": "https://www.sabotage-dijon.com/wp-content/uploads/2022/10/dali-muru-and-the-polyphonic-swarm.jpg",
+            "description": "Dali Muru & The Polyphonic Swarm, ursprünglich bekannt als FITH, bringt die Autorin, Filmemacherin und Musikerin Dalia Neis und den Produzenten Enir Da zusammen. Ihr Projekt weitete sich dann zu einem rotierenden Kollektiv von Musikern und Dichtern aus, das sich über eine Paris/Manchester/Berlin-Achse verteilte. Dali Muru wird von poetischem gesprochenem Wort, minimalistischen perkussiven Refrains, traumhaften Texturen und tiefen, melodischen Synthesizer-Flächen geleitet, die filmische Bilder, rätselhafte Erzählungen und spirituelle Raserei kanalisieren. Wie ein Märchen, Dali Muru & The Polyphonic Swarmist seltsam, aber vor allem unglaublich hypnotisch. Nach zwei ersten Alben, die 2016 auf Wanda Portal und 2018 auf Outer Reaches veröffentlicht wurden, erschien ihre neueste Produktion Anfang 2022 auf dem abenteuerlustigen belgischen Label Stroom."   
+        },
+        {
+            "id": 5, 
+            "name": "Holy Tongue", 
+            "image": "https://i0.wp.com/supersonicfestival.com/wp-content/uploads/2022/02/HOLY-TONGUE.jpg?ssl=1",
+            "description": "Holy Tongue ist eine Zusammenarbeit zwischen der Perkussionistin Valentina Magaletti, die unter anderem für ihre Arbeit mit Vanishing Twin, Tomaga, UUUU, Raime, Nicolas Jaar und Jandek bekannt ist, und dem Produzenten Al Wootton (TRULE Records, FKA Deadboy). Diese erste EP ist das Ergebnis einer improvisierten Session in East London. Die beiden sind stark vom Dub-Reggae beeinflusst und bringen ihre gegenseitige Wertschätzung für den experimentellen Dub von On-U-Sound, Muslimgauze und Post-Punk-Bands wie Liquid Liquid und 23 Skidoo in den Vordergrund des Sounds. Das Ergebnis ist eine EP mit psychedelischer, freier, energiegeladener und spiritueller Dub-Dance-Musik. Amidah Records ist ein Ableger von TRULE Records, der sich auf experimentellere Klänge spezialisiert hat."   
+        },
+        {
+            "id": 6, 
+            "name": "RS Produções", 
+            "image": "https://principediscos.files.wordpress.com/2019/03/dj-narciso.jpg",
+            "description": "RS (Rinchoa Stress) began in 2014 as a group of close friends, even before they started producing. Things got serious in 2016 when Narciso, then 17, decided to take production professionally and relaunched RS as a proper crew with DJs (himself, Nuno, Nulo and Lima), producers (himself, Nuno and Farucox) and MC (Pimenta). In less than 2 years, RS Produções have made a name for themselves with tight, across-the-board grooves and working melody and metal beats with equal proficiency. Post their debut EP “Bagdad Style” on Príncipe a couple years ago, regular club gigs and an inspiringly active Youtube account have made them one of the most charismatic and sought channels for young groups in the network."   
         }
     ]
 }
