@@ -1,24 +1,20 @@
 <template>
-  <div class="hero-section">
-    <h1>
-      Frontends we like!
-    </h1>
-  </div>
-
+  <HeroSection />
   <Accordion />
   <AppTab />
-
 </template>
 
 
 <script>
 import Accordion from '../components/Accordion/Accordion.vue'
 import AppTab from '../components/AppTab.vue'
+import HeroSection from '../components/HeroSection.vue';
 
 export default {
   components: {
     Accordion,
-    AppTab
+    AppTab,
+    HeroSection
   },
 }
 
