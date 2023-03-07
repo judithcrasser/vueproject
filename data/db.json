@@ -4,7 +4,13 @@
             "id": 1,
             "name": "Shostakovitch", 
             "image": "https://img.welt.de/img/kultur/buehne-konzert/mobile165579455/8171620727-ci23x11-w1136/Der-sowjetische-Komponist-Dimitri-Schostakowitsch.jpg",
-            "description": "Shostakovich was a Soviet-era Russian composer and pianist who became internationally known after the premiere of his First Symphony in 1926 and was regarded throughout his life as a major composer."},
+            "description": "Shostakovich was a Soviet-era Russian composer and pianist who became internationally known after the premiere of his First Symphony in 1926 and was regarded throughout his life as a major composer.",
+            "favorite_pieces": [
+                            { "piece_name": "Symphony No. 9" }, 
+                            { "piece_name": "Cello Concerto No. 1 in E-flat major, Opus 107" },
+                            { "piece_name": "Symphony No. 7" }
+                        ]
+        },
         {
             "id": 2,
             "name": "Sade", 
@@ -35,5 +41,29 @@
             "image": "https://principediscos.files.wordpress.com/2019/03/dj-narciso.jpg",
             "description": "RS (Rinchoa Stress) began in 2014 as a group of close friends, even before they started producing. Things got serious in 2016 when Narciso, then 17, decided to take production professionally and relaunched RS as a proper crew with DJs (himself, Nuno, Nulo and Lima), producers (himself, Nuno and Farucox) and MC (Pimenta). In less than 2 years, RS Produções have made a name for themselves with tight, across-the-board grooves and working melody and metal beats with equal proficiency. Post their debut EP “Bagdad Style” on Príncipe a couple years ago, regular club gigs and an inspiringly active Youtube account have made them one of the most charismatic and sought channels for young groups in the network."   
         }
+    ],
+      "menuitems": [
+                    { 
+                    "item_name": 11111, 
+                    "childrens": [
+                        { "item_name": 11 }, 
+                        { "item_name": 12 }
+                    ]},
+                    { 
+                    "item_name": 22222, 
+                    "childrens": [
+                        { "item_name": 11 }, 
+                        { "item_name": 12 }
+                    ]},
+                    { "item_name": 33333, 
+                    "childrens": [
+                        { "item_name": 11 }, 
+                        { "item_name": 12 }
+                    ]},
+                    { "item_name": 44444, 
+                    "childrens": [
+                        { "item_name": 11 }, 
+                        { "item_name": 12 }
+                    ]}
     ]
 }

@@ -3,12 +3,12 @@
         <div class="row">
             <div v-if="musicians.length"
                 class="column accordion">
-                <div v-for="musician in musicians"
-                    :key="musician.id"
+                <div v-for="(musician, index) in musicians"
+                    :key="index"
                     class="accordion-item">
 
                     <div class="title"
-                        @click="toggleAccordion()">
+                        @click="toggleAccordion(musician.name)">
 
                         <div class="text">
                             {{ musician.name }}
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="content"
-                        v-if="isOpen">
+                        v-if="isOpen && musician.name === selected">
                         <div class="image">
                             <img :src="musician.image"
                                 :alt="musician.name">
@@ -58,9 +58,12 @@
                             <p class="text">
                                 Some of my favourite pieces are:
                             </p>
-                            <ul class="list">
-                                <li>
-                                    Symphony No. 9
+                            <ul class="list"
+                                v-if="musicians.favorite_pieces">
+                                <li v-for="(submenuone, indexone) in musician.favorite_pieces"
+                                    :key="indexone"
+                                    v-if="isOpen && musician.name === selected">
+                                    {{ submenuone.piece_name }}
                                 </li>
                                 <li>
                                     Cello Concerto No. 1 in E-flat major, Opus 107
@@ -87,13 +90,15 @@ export default {
         return {
             musicians: [],
             isOpen: false,
+            selected: ''
         };
     },
 
     methods: {
-        toggleAccordion() {
-            this.isOpen = !this.isOpen;
-        },
+        toggleAccordion(item) {
+            item == this.selected ? this.isOpen = !this.isOpen : this.isOpen = true
+            this.selected = item
+        }
     },
 
     mounted() {
