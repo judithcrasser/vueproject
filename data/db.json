@@ -41,7 +41,7 @@
     ],
     "frontend": [        
         {
-            "id": 8,
+            "id": 7,
             "name": "Example Frontend", 
             "image": "",
             "description": "Lorem ipsum",
@@ -50,7 +50,7 @@
     ],
     "grafic": [
         {
-            "id": 7,
+            "id": 8,
             "name": "Example Grafic Design", 
             "image": "",
             "description": "Lorem ipsum",
@@ -59,7 +59,7 @@
     ],
     "art": [        
         {
-            "id": 8,
+            "id": 9,
             "name": "Example Artist", 
             "image": "",
             "description": "Lorem ipsum",
