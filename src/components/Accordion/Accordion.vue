@@ -55,7 +55,7 @@
                             <p class="text">
                                 {{ musician.description }}
                             </p>
-                            <p class="text">
+                            <!-- <p class="text">
                                 Some of my favourite pieces are:
                             </p>
                             <ul class="list"
@@ -71,7 +71,7 @@
                                 <li>
                                     Symphony No. 7
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
 
                     </div>
