@@ -55,17 +55,24 @@ h1 {
     flex-wrap: wrap;
 
     .img-box {
-    padding: 0.5rem;
+    margin: 0.5rem;
     display: flex;
+    background: blue;
 
     img {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    
+
     filter: grayscale(100%);
+
 
     &:hover {
         cursor: pointer;
+        mix-blend-mode: screen;
+        filter: grayscale(100%) contrast(150%);
+        opacity: 1;
     }
    }
   }
